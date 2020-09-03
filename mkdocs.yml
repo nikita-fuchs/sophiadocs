@@ -1,0 +1,16 @@
+site_name: Aeternity Sophia Docs
+
+theme:
+    name: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+        - erlang
+        
+nav:
+    - 'The sophia language' : 'index.md'
+    - Syntax : 'syntax.md'
+    - Contracts : 'contracts.md'
+    - 'Standard Library Functions' : 'sophia_stdlib.md' 
+    - Examples : 'examples.md'
