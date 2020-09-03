@@ -9,10 +9,26 @@ and `*/` and can be nested.
 
 #### Keywords
 
-```
-contract elif else entrypoint false function if import include let mod namespace
-private payable stateful switch true type record datatype
-```
+- `include`
+- `contract`
+- `datatype`
+- `namespace`
+- `type`
+- `record`
+- `payable`
+- `private`
+- `stateful`
+- `entrypoint`
+- `function`
+- `import`
+- `let`
+- `switch`
+- `if`
+- `elif`
+- `else`
+- `true`
+- `false`
+- `mod`
 
 #### Tokens
 
