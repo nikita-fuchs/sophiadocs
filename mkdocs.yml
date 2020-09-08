@@ -1,5 +1,5 @@
-site_name: Aeternity Sophia Docs
-
+site_name: Aeternity Sophia
+extra_css: [extra.css]
 theme:
     name: readthedocs
     highlightjs: true
