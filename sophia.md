@@ -248,7 +248,7 @@ If in doubt, it is possible to check if an address is payable using
 #### Payable entrypoints
 
 A contract entrypoint is by default *not* payable. Any call to such a function
-(either a [Remote call](#calling-other-contracts) or a contract call transaction)
+(either a [Remote call](contracts.md#calling-other-contracts) or a contract call transaction)
 that has a non-zero `value` will fail. Contract entrypoints that should be called
 with a non-zero value should be declared `payable`.
 

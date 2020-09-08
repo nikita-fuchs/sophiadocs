@@ -174,7 +174,7 @@ If in doubt, it is possible to check if an address is payable using
 #### Payable entrypoints
 
 A contract entrypoint is by default *not* payable. Any call to such a function
-(either a [Remote call](#calling-other-contracts) or a contract call transaction)
+(either a [Remote call](contracts.md#calling-other-contracts) or a contract call transaction)
 that has a non-zero `value` will fail. Contract entrypoints that should be called
 with a non-zero value should be declared `payable`.
 
@@ -613,7 +613,7 @@ For this purpose the [AENS](sophia_stdlib.md#AENS) library was exposed.
 In this example we assume that the name `name` already exists, and is owned by
 an account with address `addr`. In order to allow a contract `ct` to handle
 `name` the account holder needs to create a
-[signature](#delegation-signature) `sig` of `addr | name.hash | ct.address`.
+[signature](examples.md#delegation-signature) `sig` of `addr | name.hash | ct.address`.
 
 Armed with this information we can for example write a function that extends
 the name if it expires within 1000 blocks:
