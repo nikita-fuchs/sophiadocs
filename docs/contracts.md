@@ -69,7 +69,10 @@ without calling it you can write
     Chain.spend(v.address, amount)
 ```
 
-#### Protected contract calls (not implemented yet)
+#### Protected contract calls
+
+!!! attention
+    This feature is not part of the current protocol version and could be implemented in a future protocol upgrade. 
 
 If a contract call fails for any reason (for instance, the remote contract
 crashes or runs out of gas, or the entrypoint doesn't exist or has the wrong
