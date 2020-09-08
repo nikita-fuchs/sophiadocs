@@ -11,9 +11,9 @@ theme:
 markdown_extensions:
     - attr_list
     - admonition
-    - pymdownx.details
+    #- pymdownx.details
     - pymdownx.superfences
-    
+
 nav:
     - 'The sophia language' : 'index.md'
     - Syntax : 'syntax.md'
