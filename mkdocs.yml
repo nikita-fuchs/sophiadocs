@@ -14,3 +14,6 @@ nav:
     - Contracts : 'contracts.md'
     - 'Standard Library Functions' : 'sophia_stdlib.md' 
     - Examples : 'examples.md'
+
+repo_name: 'nikita-fuchs/sophiadocs'
+repo_url: 'https://github.com/nikita-fuchs/sophiadocs'
