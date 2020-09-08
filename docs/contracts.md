@@ -513,7 +513,7 @@ and thus is a value of type `bytes(2)`.
 Please refer to the `Bytes` [library documentation](sophia_stdlib.md#Bytes).
 
 
-### Cryptographic builins
+### Cryptographic builtins
 
 Libraries [Crypto](sophia_stdlib.md#Crypto) and [String](sophia_stdlib.md#String) provide functions to 
 hash objects, verify signatures etc. The `hash` is a type alias for `bytes(32)`.
