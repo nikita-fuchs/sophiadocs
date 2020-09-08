@@ -159,6 +159,10 @@ type     int_shape = shape(int)
 
 ### Types
 
+!!! tip
+
+    This is just the lexical type doc, find the type reference [here](contracts.md#types).
+
 ```c
 Type ::= Domain '=>' Type             // Function type
        | Type '(' Sep(Type, ',') ')'  // Type application
