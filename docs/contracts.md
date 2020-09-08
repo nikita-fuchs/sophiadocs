@@ -69,35 +69,30 @@ without calling it you can write
     Chain.spend(v.address, amount)
 ```
 
-#### Protected contract calls
+#### Protected contract calls (not implemented yet)
 
 If a contract call fails for any reason (for instance, the remote contract
 crashes or runs out of gas, or the entrypoint doesn't exist or has the wrong
 type) the parent call also fails. To make it possible to recover from failures,
 contract calls takes a named argument `protected : bool` (default `false`).
-
 The protected argument must be a literal boolean, and when set to `true`
 changes the type of the contract call, wrapping the result in an `option` type.
 If the call fails the result is `None`, otherwise it's `Some(r)` where `r` is
 the return value of the call.
-
 ```sophia
 contract VotingType =
   entrypoint : vote : string => unit
-
 contract Voter =
   entrypoint tryVote(v : VotingType, alt : string) =
     switch(v.vote(alt, protected = true) : option(unit))
       None    => "Voting failed"
       Some(_) => "Voting successful"
 ```
-
 Any gas that was consumed by the contract call before the failure stays
 consumed, which means that in order to protect against the remote contract
 running out of gas it is necessary to set a gas limit using the `gas` argument.
 However, note that errors that would normally consume all the gas in the
 transaction still only uses up the gas spent running the contract.
-
 
 ### Mutable state
 
@@ -502,15 +497,6 @@ records, and used in builtin functions `String.length`, `String.concat` and
 the hash functions described below.
 
 Please refer to the `String` [library documentation](sophia_stdlib.md#String).
-
-### Chars
-
-There is a builtin type `char` (the underlying representation being an integer),
-mainly used to manipulate strings via `String.to_list`/`String.from_list`.
-
-Characters can also be introduced as character literals (`'x', '+', ...).
-
-Please refer to the `Char` [library documentation](sophia_stdlib.md#Char).
 
 ### Byte arrays
 
