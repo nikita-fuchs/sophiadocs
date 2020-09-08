@@ -214,6 +214,9 @@ dependent on the specific state and event types of the contract.
 
 ### Splitting code over multiple files
 
+!!! info
+    This feature is currently not supported by the (AEstudio IDE)[https://studio.aepps.com/]
+    and shall only be used with the standalone compiler.
 
 Code from another file can be included in a contract using an `include`
 statement. These must appear at the top-level (outside the main contract). The
