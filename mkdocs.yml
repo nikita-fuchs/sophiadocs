@@ -15,11 +15,7 @@ markdown_extensions:
     #- pymdownx.superfences
 
 nav:
-    - 'The sophia language' : 'index.md'
-    - Syntax : 'syntax.md'
-    - Contracts : 'contracts.md'
-    - 'Standard Library Functions' : 'sophia_stdlib.md' 
-    - Examples : 'examples.md'
+    - 'Document Moved' : 'index.md'
 
 repo_name: 'nikita-fuchs/sophiadocs'
 repo_url: 'https://github.com/nikita-fuchs/sophiadocs'
