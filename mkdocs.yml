@@ -1,21 +1,11 @@
 site_name: Aeternity Sophia
-extra_css: [extra.css]
+repo_url: 'https://github.com/nikita-fuchs/sophiadocs'
+edit_uri: ''
+
 theme:
-    name: readthedocs
-    highlightjs: true
-    hljs_languages:
-        - yaml
-        - rust
-        - erlang
-        
-markdown_extensions:
-    - attr_list
-    - admonition
-    #- pymdownx.details
-    #- pymdownx.superfences
+  name: readthedocs
+  custom_dir: overrides
+  language: en
 
 nav:
-    - 'Document Moved' : 'index.md'
-
-repo_name: 'nikita-fuchs/sophiadocs'
-repo_url: 'https://github.com/nikita-fuchs/sophiadocs'
+  - index.md
